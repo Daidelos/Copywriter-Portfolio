@@ -1,0 +1,25 @@
+// Custom.scss
+
+$theme-colors: (
+  'primary': #3dbfd5,
+  'secondary': #393e46,
+  'light': #eeeeee,
+  'dark': #222831,
+  'info': #e8ffff,
+);
+
+$font-family-sans-serif: 'Josefin Sans', sans-serif;
+
+// Option A: Include all of Bootstrap
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+@import 'layout/header';
+@import 'layout/main-skills';

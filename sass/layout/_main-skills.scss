@@ -1,0 +1,16 @@
+.skills-row {
+  justify-content: space-between;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 20%;
+
+  .fas {
+    font-size: 3rem;
+  }
+}
