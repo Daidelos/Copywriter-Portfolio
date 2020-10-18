@@ -2,3 +2,9 @@
   text-transform: uppercase;
   font-weight: 600;
 }
+
+.gradient {
+  background-image: linear-gradient(to right, #3dbfd5, #216370);
+  -webkit-background-clip: text;
+  color: transparent;
+}

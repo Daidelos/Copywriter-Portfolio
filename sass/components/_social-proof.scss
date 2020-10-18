@@ -1,0 +1,12 @@
+.worked-with {
+  height: 10rem;
+  background-color: #222831;
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
