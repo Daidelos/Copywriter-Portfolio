@@ -1,258 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <!-- Navbar -->
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <!-- Logo -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
 
-          <div class="header__logo-box">
-            <span class="header__logo"
-              ><img src="img/gaga logo.png" alt="Dragana Drobnjak Logo"
-            /></span>
-          </div>
+  <title>Document</title>
+</head>
 
-          <!-- Nav Toggler  -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<body data-spy="scroll" data-target="#main-nav" id="home">
+  <header>
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="container navbar navbar-expand-lg navbar-light bg-white fixed-top" id="main-nav">
 
-          <!-- Nav Links  -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >About me <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <!-- Logo -->
+
+        <div class="header__logo-box">
+          <span class="header__logo"><img src="img/logo.svg" alt="Dragana Drobnjak Logo" /></span>
+        </div>
+
+        <!-- Nav Toggler  -->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links  -->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutMe">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Header  ---Hero section --- -->
+  <div class="main-header" id="home">
+    <div class="container">
+      <div class="main-header__introduction">
+        <img src="img/0-02-05-e22448d5ca358dfb1d1cf1e3744b240679129b22cf05aab96d38a5b5ec76a66b_110624f9-2.jpg"
+          alt="Dragana Drobnjak portrait picture" class="main-header__portrait img-fluid" />
+        <div class="main-header__text-box p-5">
+          <h4 class="text-secondary text-uppercase">Hi, Im</h4>
+          <h1 class="text-dark text-uppercase">
+            <strong><span class="gradient">Dragana</span></strong> Drobnjak
+          </h1>
+          <h4 class="text-secondary text-uppercase">
+            An independent freelance copywriter
+          </h4>
+          <p class="lead">
+            I am an experienced copywriter and creative article writer.
+          </p>
+          <a href="#services" class="btn btn-primary btn-lg rounded-0 text-white text-uppercase p-3" role="button">What
+            I can do
+            for you &#8594;</a>
+        </div>
+        <img src="img/main-header__stock.jpg" alt="" class="main-header__stock img-fluid" />
       </div>
-    </header>
+    </div>
+  </div>
 
-    <!-- Main Header  -->
-    <div class="main-header">
+
+
+  <!-- Experience Cards  -->
+
+  <main>
+    <div class="container">
+      <h3 class="text-secondary text-center p-5 mt-5" id="services">
+        More than three years of experience in:
+      </h3>
       <div class="container">
-        <div class="main-header__introduction">
-          <img
-            src="img/0-02-05-e22448d5ca358dfb1d1cf1e3744b240679129b22cf05aab96d38a5b5ec76a66b_110624f9-2.jpg"
-            alt=""
-            class="main-header__portrait"
-          />
-          <div class="main-header__text-box p-5">
-            <h4 class="text-secondary text-uppercase">Hi, Im</h4>
-            <h1 class="text-dark text-uppercase">
-              <strong><span class="gradient">Dragana</span></strong> Drobnjak
-            </h1>
-            <h4 class="text-secondary text-uppercase">
-              An independent freelance copywriter
-            </h4>
-            <p class="lead">
-              I am an experienced copywriter and creative article writer.
-            </p>
-            <a
-              href="#"
-              class="btn btn-primary btn-lg text-white text-uppercase p-3"
-              role="button"
-              >What I can do for you</a
-            >
+        <div class="row justify-content-between">
+          <div class="card bg-light mb-3 border-0 rounded-0" style="max-width: 15rem">
+            <div class="card-header text-center border-0 rounded-0">
+              <i class="fas fa-keyboard pt-2"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center mt-3">copywriting</h5>
+              <p class="card-text text-center lead">
+                Need a product copy that will sell? I can help you.
+              </p>
+            </div>
           </div>
-          <img
-            src="img/main-header__stock.jpg"
-            alt=""
-            class="main-header__stock"
-          />
+          <div class="card bg-info mb-3 border-0 rounded-0" style="max-width: 15rem">
+            <div class="card-header text-center border-0 rounded-0">
+              <i class="fas fa-book pt-2"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center mt-3">content writing</h5>
+              <p class="card-text text-center lead">
+                If you need a ghostriter for any content.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-light mb-3 border-0 rounded-0" style="max-width: 15rem">
+            <div class="card-header text-center border-0 rounded-0">
+              <i class="fas fa-lightbulb pt-2"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center mt-3">creative writing</h5>
+              <p class="card-text text-center lead">
+                Need a song or a poem? I am here for you.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-info mb-3 border-0 rounded-0" style="max-width: 15rem">
+            <div class="card-header text-center border-0 rounded-0">
+              <i class="fas fa-newspaper pt-2"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center mt-3">article writing</h5>
+              <p class="card-text text-center lead">
+                Need an article for your growing online magazine or blog? Let
+                us do this together.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <main>
-      <div class="container">
-        <h3 class="text-secondary text-center p-5">
-          More than three years of experience in:
-        </h3>
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="card bg-light mb-3" style="max-width: 15rem">
-              <div class="card-header text-center">
-                <i class="fas fa-keyboard pt-2"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center mt-3">copywriting</h5>
-                <p class="card-text text-center lead">
-                  Need a product copy that will sell? I can help you.
-                </p>
-              </div>
-            </div>
-            <div class="card bg-info mb-3" style="max-width: 15rem">
-              <div class="card-header text-center">
-                <i class="fas fa-book pt-2"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center mt-3">content writing</h5>
-                <p class="card-text text-center lead">
-                  If you need a ghostriter for any content.
-                </p>
-              </div>
-            </div>
-            <div class="card bg-light mb-3" style="max-width: 15rem">
-              <div class="card-header text-center">
-                <i class="fas fa-lightbulb pt-2"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center mt-3">creative writing</h5>
-                <p class="card-text text-center lead">
-                  Need a song or a poem? I am here for you.
-                </p>
-              </div>
-            </div>
-            <div class="card bg-info mb-3" style="max-width: 15rem">
-              <div class="card-header text-center">
-                <i class="fas fa-newspaper pt-2"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center mt-3">article writing</h5>
-                <p class="card-text text-center lead">
-                  Need an article for your growing online magazine or blog? Let
-                  us do this together.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- List of what I can do for you  -->
+
+    <section class="container">
+      <div class="row section-experience">
+        <div class="what-i-do">
+          <h3 class="text-secondary pt-5 pb-2 px-5">
+            What I can do for you:
+          </h3>
+          <ul class="mx-5">
+            <li class="work">
+              <i class="far fa-check-circle pt-2"></i> The unique content of
+              all types;
+            </li>
+            <li class="work">
+              <i class="far fa-check-circle pt-2"></i>
+              Articles that come from a free writing style, followed by
+              philosophical critique that inspire readers;
+            </li>
+            <li class="work">
+              <i class="far fa-check-circle pt-2"></i>
+              Marketing content for different social platforms, like FB and
+              IG;
+            </li>
+            <li class="work">
+              <i class="far fa-check-circle pt-2"></i>
+              Blog articles, if you want to refresh your blog or need a
+              ghostwriter for an occasional post;
+            </li>
+            <li class="work">
+              <i class="far fa-check-circle pt-2"></i>
+              Email templates for different businesses or personal purposes;
+            </li>
+          </ul>
+        </div>
+        <img src="img/home-office.jpg" class="experience" />
+        <div class="what-i-do-2 lead">
+          <ul class="m-5">
+            <li class="work">
+              <i class="fas fa-check-circle pt-2"></i>
+              Ad Copy, banners, titles, headlines that pass needed
+              requirements and rules;
+            </li>
+            <li class="work">
+              <i class="fas fa-check-circle pt-2"></i>
+              Poems and songs, mostly rock n' roll and hip hop ones;
+            </li>
+            <li class="work">
+              <i class="fas fa-check-circle pt-2"></i>
+              About you pages, whether for your company or yourself;
+            </li>
+            <li class="work">
+              <i class="fas fa-check-circle pt-2"></i>
+              Landing pages that make people click that 'order' or 'buy'
+              button;
+            </li>
+            <li class="work">
+              <i class="fas fa-check-circle pt-2"></i>
+              Product descriptions and reviews of all types (this is probably
+              my favorite);
+            </li>
+            <li class="work">
+              <i class="fas fa-check-circle pt-2"></i>
+              Many other things, just ask...
+            </li>
+          </ul>
         </div>
       </div>
+    </section>
 
-      <section class="container">
-        <div class="row section-experience">
-          <div class="what-i-do">
-            <h3 class="text-secondary pt-5 pb-2 px-5">
-              What I can do for you:
-            </h3>
-            <ul class="mx-5">
-              <li class="work">
-                <i class="far fa-check-circle pt-2"></i>The unique content of
-                all types;
-              </li>
-              <li class="work">
-                <i class="far fa-check-circle pt-2"></i>
-                Articles that come from a free writing style, followed by
-                philosophical critique that inspire readers;
-              </li>
-              <li class="work">
-                <i class="far fa-check-circle pt-2"></i>
-                Marketing content for different social platforms, like FB and
-                IG;
-              </li>
-              <li class="work">
-                <i class="far fa-check-circle pt-2"></i>
-                Blog articles, if you want to refresh your blog or need a
-                ghostwriter for an occasional post;
-              </li>
-              <li class="work">
-                <i class="far fa-check-circle pt-2"></i>
-                Email templates for different businesses or personal purposes;
-              </li>
-            </ul>
-          </div>
-          <img src="img/home-office.jpg" class="experience" />
-          <div class="what-i-do-2 lead">
-            <ul class="m-5">
-              <li class="work">
-                <i class="fas fa-check-circle pt-2"></i>
-                Ad Copy, banners, titles, headlines that pass needed
-                requirements and rules;
-              </li>
-              <li class="work">
-                <i class="fas fa-check-circle pt-2"></i>
-                Poems and songs, mostly rock n' roll and hip hop ones;
-              </li>
-              <li class="work">
-                <i class="fas fa-check-circle pt-2"></i>
-                About you pages, whether for your company or yourself;
-              </li>
-              <li class="work">
-                <i class="fas fa-check-circle pt-2"></i>
-                Landing pages that make people click that 'order' or 'buy'
-                button;
-              </li>
-              <li class="work">
-                <i class="fas fa-check-circle pt-2"></i>
-                Product descriptions and reviews of all types (this is probably
-                my favorite);
-              </li>
-              <li class="work">
-                <i class="fas fa-check-circle pt-2"></i>
-                Many other things, just ask...
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    <!-- Carousel  -->
 
-      <!-- Companies Worked With -->
-      <section class="worked-with mt-5">
-        <div class="container">
-          <div class="worked-with__list">
-            <img src="img/image 38.png" alt="" />
-            <img src="img/image 35.png" alt="" />
-            <img src="img/image 34.png" alt="" />
-            <img src="img/image 32.png" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <section class="testimonials">
-        <div class="container">
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-ride="carousel"
-            data-interval="12000"
-          >
+    <section class="testimonials">
+      <div class="container ">
+        <div class="carousel-container">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="12000">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="carousel-item__testimonial">
                   <div class="rating text-center p-4">
-                    <span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span> <strong>5.00</strong
-                    ><span class="date">Apr 21, 2018 - Apr 24, 2018</span>
+                    <span class="fas fa-star"></span><span class="fas fa-star"></span><span
+                      class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
+                    <strong>5.00</strong><span class="date">Apr 21, 2018 - Apr 24, 2018</span>
                   </div>
                   <div class="quote text-center p-5">
                     <p class="lead">
@@ -260,19 +230,17 @@
                     </p>
                   </div>
                   <div class="upwork text-center">
-                    <img src="/img/Upwork Link.png" alt="Link for upwork" />
+                    <a href="https://www.upwork.com/freelancers/~019a9cf712ef5381e3" target="_blank"><img
+                        src="/img/Upwork Link.png" alt="Link for upwork" /></a>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="carousel-item__testimonial">
                   <div class="rating text-center p-4">
-                    <span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span> <strong>5.00</strong
-                    ><span class="date">Aug 5, 2017 - Feb 18, 2019</span>
+                    <span class="fas fa-star"></span><span class="fas fa-star"></span><span
+                      class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
+                    <strong>5.00</strong><span class="date">Aug 5, 2017 - Feb 18, 2019</span>
                   </div>
                   <div class="quote text-center p-3">
                     <p class="lead quote-2">
@@ -284,19 +252,17 @@
                     </p>
                   </div>
                   <div class="upwork text-center">
-                    <img src="/img/Upwork Link.png" alt="Link for upwork" />
+                    <a href="https://www.upwork.com/freelancers/~019a9cf712ef5381e3" target="_blank"><img
+                        src="/img/Upwork Link.png" alt="Link for upwork" /></a>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="carousel-item__testimonial">
                   <div class="rating text-center p-4">
-                    <span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span
-                    ><span class="fas fa-star"></span> <strong>5.00</strong
-                    ><span class="date">Mar 26, 2020 - Jun 25, 2020</span>
+                    <span class="fas fa-star"></span><span class="fas fa-star"></span><span
+                      class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
+                    <strong>5.00</strong><span class="date">Mar 26, 2020 - Jun 25, 2020</span>
                   </div>
                   <div class="quote text-center p-5">
                     <p class="lead">
@@ -304,54 +270,409 @@
                     </p>
                   </div>
                   <div class="upwork text-center">
-                    <img src="/img/Upwork Link.png" alt="Link for upwork" />
+                    <a href="https://www.upwork.com/freelancers/~019a9cf712ef5381e3" target="_blank"><img
+                        src="/img/Upwork Link.png" alt="Link for upwork" /></a>
                   </div>
                 </div>
               </div>
             </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
         </div>
-      </section>
-    </main>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      </div>
+    </section>
+
+
+
+    <!-- More About Me  -->
+
+    <section class="about-me container " id="aboutMe">
+      <div class="about-me-box mb-5">
+        <div class="about-me-text ">
+          <h3 class="text-secondary pt-5 pb-3 px-5">
+            More about me:
+          </h3>
+          <p class="px-5 lead">Appreciation of language and literature has followed me since the earliest days. Since my
+            childhood, I've used every single book as an opportunity to read and improve my imagination,
+            which later on resulted in writing my own poems and stories.
+            I have written my first poem at the age of seven, and since then, my writing talent has
+            empowered passion for words and marked my life path.</p>
+          <p class="px-5 lead">To be completely honest with you, my entire life is somehow related to writing, and my
+            whole personality is permeated with it.
+            Expression of ideas and emotions through words - that's what I've been born for...</p>
+
+        </div>
+        <img class="about-me-img" src="img/portrait-2.jpg" alt="">
+
+      </div>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- As seen in -->
+
+    <section class="worked-with">
+      <div class="container">
+        <div class="worked-with__list">
+          <img src="img/image 38.png" alt="" />
+          <img src="img/image 35.png" alt="" />
+          <img src="img/image 34.png" alt="" />
+          <img src="img/image 32.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio  -->
+
+    <section class="portfolio container" id="portfolio">
+      <h3 class="text-secondary text-center p-5 mt-5 text-secondary">
+        Portfolio
+      </h3>
+
+      <!-- Luvellic  -->
+
+      <section class="portfolio container">
+
+
+        <div class="luvellic mb-5">
+
+          <div class="luvellic-text">
+
+            <h1 class="text-uppercase">
+              <strong><span class="gradient">Luvellic</span></strong>
+            </h1>
+
+            <p class="lead my-5">
+              Luvellic is a company that sells face and body creams with whitening properties, mostly to
+              women in India and South Africa. My task was to write the mission, vision, and about page
+              for the company, as well as to create copywriting for body and face cream, highlighting the
+              benefits of the products.
+            </p>
+            <a href="#" class="btn btn-portfolio btn-primary btn-lg rounded-0 text-white text-uppercase p-3"
+              role="button" data-toggle="modal" data-target="#luvellic">View my copy
+            </a>
+            <img src="img/drew-graham-cTKGZJTMJQU-unsplash.jpg" alt="" class="luvellic-img img-fluid" />
+
+
+            <!-- Modal Luvellic -->
+            <div class="modal fade" id="luvellic" tabindex="-1" role="dialog" aria-labelledby="luvellicTitle"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title p-5 ml-4" id="luvellic">Luvellic Day Cream</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body popup-text lead p-5 mx-5">
+
+                    <p class="h5">For the packaging:</p>
+
+                    <p class="lead">Proven ingredients for brighter skin - with Glutathione and Gigawhite. Luvellic Day
+                      Cream with brightening properties contains natural ingredients with whitening properties. Zero
+                      side
+                      effects, 100% results.</p>
+                    <p class="h5">Shorter description at the side of the image:</p>
+                    <p class="lead">Glutathione and Gigawhite are some of the rare ingredients that are truly effective
+                      for skin and have whitening properties. Luvellic Day Cream will not only brighten your skin, but
+                      will
+                      also take amazing care of it and make it look fresh, healthy, and younger - ALL THE TIME!
+                      *Watermelon extract is specially added for stressed skin - No need to spend hours on beauty
+                      skin routine any more!</p>
+                    <p class="h5">Longer descriptions for the bottom of the page:</p>
+                    <p class="lead">Finding a suitable day cream may be stressful for the ladies - the market is filled
+                      with the
+                      products that most often don't provide proven results due to poor ingredients with no effects.
+                      And most often, we don't think about the ingredients and their effects enough.
+                      From now on, you won't have to worry about finding a reliable day cream with whitening
+                      properties - Luvellic Day Cream has all that you need! Glutathione and Gigawhite have
+                      whitening properties, and Niacinamide and Resveratrol Powder make the effects even
+                      stronger.</p>
+                    <p class="lead">Protecting your skin through the entire day doesn't have to be a challenging task
+                      anymore -
+                      Vitamin A, Provitamin B, and Carrot Extract will completely naturally save your skin from
+                      harmful free radiants that surround us daily while making sure that your main goal is reached
+                      - brighter, young-looking, fresh skin!</p>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="https://luvellic.co.za/"
+              class="btn btn-portfolio btn-outline-primary btn-lg rounded-0 text-primary text-uppercase p-3"
+              role="button" target="_blank">Visit Luvellic &#8594;
+            </a>
+
+          </div>
+
+
+      </section>
+
+      <!-- salt & sun  -->
+
+      <section class="container">
+        <div class="salt-sun mt-5">
+
+          <div class="salt-sun-text">
+
+            <h1 class="text-uppercase">
+              <strong><span class="gradient">Salt & Sun</span></strong>
+            </h1>
+
+            <p class="lead my-5">
+              Appreciation of language and literature has followed me since the earliest days. Since my
+              childhood, I've used every single book as an opportunity to read and improve my imagination,
+              which later on resulted in writing my own poems and stories.
+              I have written my first poem at the age of seven, and since then, my writing talent has
+              empowered passion for words and marked my life pat
+            </p>
+            <a href="#" class="btn btn-portfolio btn-primary btn-lg rounded-0 text-white text-uppercase p-3"
+              role="button" data-toggle="modal" data-target="#saltSun">View my copy
+            </a>
+            <img src="img/jernej-graj-L-ROTbBDgTc-unsplash.jpg" alt="" class="salt-sun-img img-fluid" />
+
+            <!-- Modal  Salt & Sun-->
+            <div class="modal fade" id="saltSun" tabindex="-1" role="dialog" aria-labelledby="saltSunTitle"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title p-5 ml-4" id="saltSunLongTitle">Bikini Tops </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body popup-text lead p-5 mx-5">
+
+                    <p class="h5">Iris Top White Pattern Bikini Top </a>
+
+                    <p class="lead">One thing is for sure - simplicity never goes out of the style because it is always
+                      classy. The new white triangle bikini top is the perfect choice for the amazing and fun moments at
+                      the pool. We all love our well-deserved breaks, so this bikini top will make it all easier for you
+                      -
+                      no more need to think about combining it with other accessories and colors because it perfectly
+                      goes
+                      with everything. Love your body even more from now on in this white triangle bikini because it
+                      will
+                      keep the natural look of your décolleté. Perfectly suitable for small and medium cup sizes. Invest
+                      in something classic and simple this Autumn because it will be your best spa friend for a lot of
+                      upcoming seasons!</p>
+
+
+                    <p class="h5">Nesea Bikini Top Gold Pattern</a>
+
+                    <p class="lead">If you are that brave to be in the center of attention, then you have found your
+                      perfect bikini! The perfect choice for a pool, hot bath, or spa. Flattering, sexy, and shiny, it
+                      will definitely express your finest taste in fashion when it comes to swimwear. Can you already
+                      imagine those joyful moments when leaves fall from the trees and you relax in a hot bath? Feel
+                      confident in this bikini top, be seen, and always keep your style on the highest level. With us,
+                      that's easy to be achieved from now on! Medium and small size cups are ideal for this type. Being
+                      unique doesn't have to require a lot of commitment anymore.</p>
+
+                    <p class="h5">Nesea Bikini Top White Pattern </a>
+
+                    <p class="lead">Bandeau tops are always attractive! If you are thinking about creating an
+                      outstanding
+                      outfit for this Autumn, with this one you definitely won't make a mistake. It is a classic because
+                      of the white color, yet the details add a special note and make the overall expression highly
+                      luxurious. Whoever said that attractive clothes aren't comfortable probably hasn't tried this
+                      bikini
+                      top made from the flexible material. It is ideal for small and medium-sized cups. </p>
+
+                    <p class="h5">Iris Top Gold Pattern Bikini Top</a>
+
+                    <p class="lead">How does an ideal pool date look like? Massage, hot water, a glass of wine, and your
+                      beloved person. Yet, if you want to make that experience unforgettable and to shine like never
+                      before, achieve that in an easy manner with our Iris Top Gold Pattern Bikini Top. The details on
+                      it
+                      make it look unique, but the overall impression is 100% sophisticated. Surprise yourself or your
+                      beloved partner with the amazing looks this bikini top offers you. Ties around the neck for an
+                      even
+                      more comfortable feeling.</p>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="https://saltandsun.ch/"
+              class="btn btn-portfolio btn-outline-primary btn-lg rounded-0 text-primary text-uppercase p-3"
+              role="button" target="_blank">Visit Salt & Sun &#8594;
+            </a>
+
+          </div>
+      </section>
+
+      <!-- Lavolio  -->
+
+      <div class="lavolio">
+
+        <div class="lavolio-text my-5">
+
+          <h1 class="text-uppercase">
+            <strong><span class="gradient">Lavolio</span></strong>
+          </h1>
+
+          <p class="lead my-5">
+            Lavolio is a handmade sweets shop inspired by the most sophisticated Italian chocolate. I got
+            a task to create copywriting blog posts that represented special occasions which can be
+            fulfilled with their sweets. From Mother&#39;s Day and Easter, through weddings and
+            anniversaries, to gifting occasions of different sorts - I&#39;ve highlighted Lavolio sweets through
+            interesting and advising stories.
+          </p>
+          <a href="#" class="btn btn-portfolio btn-primary btn-lg rounded-0 text-white text-uppercase p-3" role="button"
+            data-toggle="modal" data-target="#exampleModalCenter">View my copy
+          </a>
+
+          <!-- Modal Lavolio-->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title p-5 ml-4" id="exampleModalLongTitle">Handmade sweets shop</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body popup-text lead p-5 mx-5">
+
+                  <p class="h5">Luxurious and sophisticated anniversary gifts for her and for him </p>
+
+                  <p class="lead">Anniversaries always need to be celebrated in special ways. Let's think for a few
+                    moments why people even celebrate such days. Can anniversary be like any other, ordinary day? No, it
+                    cannot. It is psychologically proven that people who celebrate their anniversaries have happier and
+                    longer-lasting relationships.</p>
+
+                  <p class="lead">What do you do on that day? You remind your partner and yourself how happy you are to
+                    be together. You laugh about all those amazing moments you have spent together, you talk about your
+                    past, your future... If you are thinking about making an anniversary even more special and surprise
+                    your partner, know that you are in a perfect place to achieve that easily!</p>
+
+                  <p class="h5">A perfect choice to make your anniversary sweet - Italian sweets and chocolates</p>
+
+                  <p class="lead">Countless couples all around the globe have already made their partners happy with my
+                    unique and handmade chocolate confectionery. The best would be to start with thinking about Gift
+                    Wrapped Soft Nougat which comes in a pack of 3 or Miniature Five Gift Wrapped flavors. Prosecco
+                    Willow Hamper is also an amazing choice if you want to create a special night you two will remember
+                    for your whole lives.</p>
+
+                  <p class="h5">Chocolate gift box for him and Italian Bomboniere for her</p>
+
+                  <p class="lead">My chocolate confectionery collections offer you a wide range of flavours which can
+                    satisfy everyone's preferences. If you want to surprise him, the best would be to think of flavours
+                    he likes. I can suggest you try with chocolate eggs like William Morris Nutty Forest, Arabian
+                    Nights, Fruit Garden, Coconut Folies or Decadent Spiced. Nutty Mini Eggs and Fondant Lovelies also
+                    come in amazing shapes and even better tastes. For her, Italian Bomboniere will be just perfect. You
+                    can get her a chocolate gift box like Almond Soft Nougat, Hazelnut and Cocoa Soft Nougat or even
+                    Pistachio Soft Nougat. Which of these Italian sweets and chocolates suits your partner the best?
+                  </p>
+
+                  <p class="h5">Why is Lavolio luxury confectionery so adored all around the globe?</p>
+
+                  <p class="lead">Before I have realized how making unique and hand-made Italian sweets and chocolates
+                    is my life call, I have heard numerous people talking about how Venchi is the best brand of Italian
+                    chocolate confectionery. I may agree that Venchi is amazing, yet, I have also realized how all
+                    confectionery brands are actually missing something. Although their products are luxurious and very
+                    tasty, I wanted to make something different and even more special. </p>
+
+                  <p class="lead">People always connect chocolates with gifts, and that is exactly why I have focused on
+                    handmade products from artisan chocolate. Later on, countless people claimed how I am now the best
+                    brand of Italian sweets and chocolates. All my chocololate confectionery is award-winning. </p>
+
+                  <p class="lead">Make your anniversary remarkable with any chocolate gift box from my collections.
+                    Lavolio, Nutty Forest and William Morris will make your anniversary unforgettable.</p>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="https://lavolio.com/"
+            class="btn btn-portfolio btn-outline-primary btn-lg rounded-0 text-primary text-uppercase p-3" role="button"
+            target="_blank">Visit Lavolio &#8594;
+          </a>
+          <img src="img/Nutty-Forest-lavolio-luxury-chocolate-italian-confectionery-london-gift-2.jpg" alt=""
+            class="lavolio-img img-fluid" />
+        </div>
+
+
+    </section>
+
+
+
+
+  </main>
+
+  <!-- Footer  -->
+
+  <footer class="footer">
+    <div class="container text-center">
+      <a href="#home"><i class="fas fa-arrow-circle-up footer-to-top"></i></a>
+
+      <img class="footer-logo-img m-4" src="img/Logo Finished.svg" alt="Dragana Drobnjak Logo" />
+      <div class="row footer-contact d-flex justify-content-center align-items-center">
+        <span class="contact-me text-light h3">Send me an e-mail: <a
+            href="mailto:draeganas@gmail.com">draeganas@gmail.com</a></span>
+
+        <div class="container m-4 h5"><span class="platforms text-light">Or contact me through freelancing platforms:
+            <a href="https://www.upwork.com/freelancers/~019a9cf712ef5381e3" target="_blank" class="m-2"><img
+                class="platform-logo" src="img/upwork-tile.svg" alt=""></a>
+            <a href="https://www.freelancer.com/u/draganastoji" target="_blank" class="m-2"><img class="platform-logo"
+                src="img/freelancer-icon.svg" alt=""></a></div>
+
+
+        </span>
+
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center text-light py-3 mt-5 ">© 2020 Copyright: Dragana Drobnjak</div>
+    </div>
+  </footer>
+
+  <!-- Scripts  -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+
+  <script>
+    //Scrollspy
+
+    $('body').scrollspy({ target: '#main-nav' });
+
+
+
+  </script>
+</body>
+
 </html>

@@ -1,22 +1,13 @@
 .card {
-  border: none;
-  border-radius: 0;
-
   .fas {
     font-size: 3rem;
     display: inline-block;
     background-image: linear-gradient(to right, #3dbfd5, #216370);
     -webkit-background-clip: text;
     color: transparent;
-
-    &:hover {
-    }
   }
 }
 
-.card-header {
-  border: none;
-}
 .section-experience {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr, 1rem, min-content, min-content;
@@ -33,10 +24,10 @@
   grid-row: 1 / 4;
   grid-column: 1 / 6;
   background-color: #eeeeee;
+  color: #494f5a;
   margin-left: 15px;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #494f5a;
 
   line-height: 1.9;
   margin-right: 10rem;
@@ -64,4 +55,29 @@
   margin-top: 4rem;
   padding-top: 4rem;
   margin-right: 15px;
+}
+
+// about me
+.about-me-box {
+  width: 75%;
+  position: relative;
+  background-color: #eeeeee;
+  color: #494f5a;
+  margin-right: 10rem;
+  padding: 0 4rem 3rem 0;
+}
+
+.about-me-text {
+  width: 85%;
+}
+.about-me-img {
+  width: 17rem;
+  position: absolute;
+  right: -30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.worked-with {
+  margin-top: 5rem;
 }

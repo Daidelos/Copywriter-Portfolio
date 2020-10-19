@@ -1,0 +1,46 @@
+.lavolio,
+.luvellic {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.lavolio-text,
+.luvellic-text {
+  width: 50rem;
+  height: auto;
+  background-color: #e8ffff;
+  position: relative;
+  padding: 5rem 5rem 5rem 14rem;
+  width: 70%;
+}
+
+.lavolio-img,
+.luvellic-img {
+  max-width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: -10rem;
+  transform: translateY(-50%);
+}
+
+.btn-portfolio {
+  width: 45%;
+  font-size: 1rem;
+}
+
+.salt-sun-text {
+  width: 50rem;
+  height: auto;
+  background-color: #eeeeee;
+  position: relative;
+  padding: 5rem 14rem 5rem 5rem;
+  width: 70%;
+}
+.salt-sun-img {
+  max-width: 20rem;
+  position: absolute;
+  top: 50%;
+  right: -10rem;
+  transform: translateY(-50%);
+}
