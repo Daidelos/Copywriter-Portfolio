@@ -79,6 +79,7 @@
   align-items: center;
 
   p {
+    font-size: 1.4rem;
     @include respond(lg) {
       font-weight: 300;
       font-size: 1.1rem;
