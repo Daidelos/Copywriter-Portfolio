@@ -4,9 +4,30 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #222831;
+
+  @include respond(lg) {
+    width: 45rem;
+  }
+  @include respond(md) {
+    width: 35rem;
+  }
+  @include respond(sm) {
+    width: 25rem;
+  }
 }
 .testimonials {
   padding: 5rem 0;
+
+  @include respond(lg) {
+    padding: 0;
+    margin: 2rem 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(168, 251, 255, 0.7),
+        rgba(168, 251, 255, 0.7)
+      ),
+      url(/img/pages.jpg);
+  }
 }
 
 .carousel-container {
@@ -20,12 +41,23 @@
     url(/img/pages.jpg);
   background-size: cover;
   position: relative;
+
+  @include respond(lg) {
+    background-image: none;
+    padding: 2rem;
+    height: 20rem;
+  }
 }
 
 .carousel-inner {
-  width: 60rem;
+  width: 55rem;
   height: 16rem;
   background-color: white;
+
+  @include respond(lg) {
+    width: auto;
+    height: 100%;
+  }
 
   &__testimonial {
     display: flex;
@@ -34,10 +66,25 @@
   }
 }
 
+.rating {
+  .fa-star {
+    font-size: 0.8rem;
+    color: 222831;
+  }
+}
+
 .quote {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  p {
+    @include respond(lg) {
+      font-weight: 300;
+      font-size: 1.1rem;
+      padding: 0 1rem 1rem 1rem;
+    }
+  }
 }
 
 .quote-2 {
@@ -48,6 +95,10 @@
 .upwork {
   img {
     width: 6rem;
+    @include respond(lg) {
+      width: 4.5rem;
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -55,12 +106,29 @@
   padding-left: 0.5rem;
   color: #747e8f;
   font-size: 0.9rem;
+
+  @include respond(lg) {
+    font-size: 0.8rem;
+    padding-left: 0;
+  }
 }
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='222831' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+
+  @include respond(lg) {
+    display: none;
+  }
 }
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='222831' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+
+  @include respond(lg) {
+    display: none;
+  }
+}
+
+.upwork-reviews {
+  transform: scale(1.5);
 }

@@ -14,45 +14,48 @@
   <title>Document</title>
 </head>
 
-<body data-spy="scroll" data-target="#main-nav" id="home">
+<body data-spy="scroll" data-target="#main-nav" id="home" data-offset="50">
   <header>
     <!-- Navbar -->
-    <div class="container">
-      <nav class="container navbar navbar-expand-lg navbar-light bg-white fixed-top" id="main-nav">
+    <div class="container-fluid nav-container fixed-top">
+      <div class="container px-0">
+        <nav class="container px-0 navbar navbar-expand-lg navbar-light bg-white " id="main-nav">
 
-        <!-- Logo -->
+          <!-- Logo -->
 
-        <div class="header__logo-box">
-          <span class="header__logo"><img src="img/logo.svg" alt="Dragana Drobnjak Logo" /></span>
-        </div>
+          <div class="header__logo-box pb-1 pl-2">
+            <span class="header__logo"><img src="img/DD.svg" alt="Dragana Drobnjak Logo" /></span>
+          </div>
 
-        <!-- Nav Toggler  -->
+          <!-- Nav Toggler  -->
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <!-- Nav Links  -->
+          <!-- Nav Links  -->
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutMe">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutMe">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
+
   </header>
 
   <!-- Main Header  ---Hero section --- -->
@@ -74,7 +77,7 @@
           </p>
           <a href="#services" class="btn btn-primary btn-lg rounded-0 text-white text-uppercase p-3" role="button">What
             I can do
-            for you &#8594;</a>
+            for you</a>
         </div>
         <img src="img/main-header__stock.jpg" alt="" class="main-header__stock img-fluid" />
       </div>
@@ -87,11 +90,12 @@
 
   <main>
     <div class="container">
-      <h3 class="text-secondary text-center p-5 mt-5" id="services">
+
+      <h3 class="text-secondary text-center text-uppercase p-5 mt-4 card-title-main" id="services">
         More than three years of experience in:
       </h3>
       <div class="container">
-        <div class="row justify-content-between">
+        <div class="row card-container ">
           <div class="card bg-light mb-3 border-0 rounded-0" style="max-width: 15rem">
             <div class="card-header text-center border-0 rounded-0">
               <i class="fas fa-keyboard pt-2"></i>
@@ -99,7 +103,7 @@
             <div class="card-body">
               <h5 class="card-title text-center mt-3">copywriting</h5>
               <p class="card-text text-center lead">
-                Need a product copy that will sell? I can help you.
+                Seductive sales copy right at your fingertips - get the type you need now!
               </p>
             </div>
           </div>
@@ -110,7 +114,7 @@
             <div class="card-body">
               <h5 class="card-title text-center mt-3">content writing</h5>
               <p class="card-text text-center lead">
-                If you need a ghostriter for any content.
+                Make your website stand out from the crowd with a bit of my help
               </p>
             </div>
           </div>
@@ -121,7 +125,7 @@
             <div class="card-body">
               <h5 class="card-title text-center mt-3">creative writing</h5>
               <p class="card-text text-center lead">
-                Need a song or a poem? I am here for you.
+                Beautiful poems, ear worm songs, interesting social media posts? I am here for you.
               </p>
             </div>
           </div>
@@ -132,8 +136,7 @@
             <div class="card-body">
               <h5 class="card-title text-center mt-3">article writing</h5>
               <p class="card-text text-center lead">
-                Need an article for your growing online magazine or blog? Let
-                us do this together.
+                Quality blogs and articles that cover literally any needed topic? Improve your traffic with me!
               </p>
             </div>
           </div>
@@ -146,7 +149,7 @@
     <section class="container">
       <div class="row section-experience">
         <div class="what-i-do">
-          <h3 class="text-secondary pt-5 pb-2 px-5">
+          <h3 class="services-title text-secondary pt-5 pb-2 px-5">
             What I can do for you:
           </h3>
           <ul class="mx-5">
@@ -222,16 +225,17 @@
                   <div class="rating text-center p-4">
                     <span class="fas fa-star"></span><span class="fas fa-star"></span><span
                       class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
-                    <strong>5.00</strong><span class="date">Apr 21, 2018 - Apr 24, 2018</span>
+                    <span class="date"><strong>5.00</strong> Apr 21, 2018 - Apr 24, 2018</span>
                   </div>
                   <div class="quote text-center p-5">
-                    <p class="lead">
+                    <p class="h5">
                       “Great editor with fabulous humor in writing!”
                     </p>
                   </div>
                   <div class="upwork text-center">
                     <a href="https://www.upwork.com/freelancers/~019a9cf712ef5381e3" target="_blank"><img
-                        src="/img/Upwork Link.png" alt="Link for upwork" /></a>
+                        src="img/upwork-reviews.svg" alt="Link for upwork" class="upwork-reviews" class="upwork-reviews"
+                        title="Visit Upwork Platform to see my reviews" /></a>
                   </div>
                 </div>
               </div>
@@ -240,10 +244,10 @@
                   <div class="rating text-center p-4">
                     <span class="fas fa-star"></span><span class="fas fa-star"></span><span
                       class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
-                    <strong>5.00</strong><span class="date">Aug 5, 2017 - Feb 18, 2019</span>
+                    <span class="date"><strong>5.00</strong> Aug 5, 2017 - Feb 18, 2019</span>
                   </div>
                   <div class="quote text-center p-3">
-                    <p class="lead quote-2">
+                    <p class="h5 quote-2">
                       “I have had the pleasure of supervising Dragana for the
                       past 17 months while she worked in various areas as a
                       writer for the website. Dragana has performed superbly in
@@ -253,7 +257,8 @@
                   </div>
                   <div class="upwork text-center">
                     <a href="https://www.upwork.com/freelancers/~019a9cf712ef5381e3" target="_blank"><img
-                        src="/img/Upwork Link.png" alt="Link for upwork" /></a>
+                        src="img/upwork-reviews.svg" alt="Link for upwork" class="upwork-reviews" class="upwork-reviews"
+                        title="Visit Upwork Platform to see my reviews" /></a>
                   </div>
                 </div>
               </div>
@@ -262,16 +267,17 @@
                   <div class="rating text-center p-4">
                     <span class="fas fa-star"></span><span class="fas fa-star"></span><span
                       class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
-                    <strong>5.00</strong><span class="date">Mar 26, 2020 - Jun 25, 2020</span>
+                    <span class="date"><strong>5.00</strong> Mar 26, 2020 - Jun 25, 2020</span>
                   </div>
                   <div class="quote text-center p-5">
-                    <p class="lead">
+                    <p class="h5">
                       “Very responsive, attentive, and easy to work with.”
                     </p>
                   </div>
                   <div class="upwork text-center">
                     <a href="https://www.upwork.com/freelancers/~019a9cf712ef5381e3" target="_blank"><img
-                        src="/img/Upwork Link.png" alt="Link for upwork" /></a>
+                        src="img/upwork-reviews.svg" alt="Link for upwork" class="upwork-reviews"
+                        title="Visit Upwork Platform to see my reviews" /></a>
                   </div>
                 </div>
               </div>
@@ -297,7 +303,7 @@
     <section class="about-me container " id="aboutMe">
       <div class="about-me-box mb-5">
         <div class="about-me-text ">
-          <h3 class="text-secondary pt-5 pb-3 px-5">
+          <h3 class="text-secondary pt-5 pb-3 px-5 about-me-title">
             More about me:
           </h3>
           <p class="px-5 lead">Appreciation of language and literature has followed me since the earliest days. Since my
@@ -305,7 +311,8 @@
             which later on resulted in writing my own poems and stories.
             I have written my first poem at the age of seven, and since then, my writing talent has
             empowered passion for words and marked my life path.</p>
-          <p class="px-5 lead">To be completely honest with you, my entire life is somehow related to writing, and my
+          <p class="px-5 lead about-me-add">To be completely honest with you, my entire life is somehow related to
+            writing, and my
             whole personality is permeated with it.
             Expression of ideas and emotions through words - that's what I've been born for...</p>
 
@@ -326,18 +333,18 @@
     <section class="worked-with">
       <div class="container">
         <div class="worked-with__list">
-          <img src="img/image 38.png" alt="" />
-          <img src="img/image 35.png" alt="" />
-          <img src="img/image 34.png" alt="" />
-          <img src="img/image 32.png" alt="" />
+          <img src="img/Group 27.jpg" class="img-fluid" alt="" />
+
         </div>
       </div>
+
+
     </section>
 
     <!-- Portfolio  -->
 
     <section class="portfolio container" id="portfolio">
-      <h3 class="text-secondary text-center p-5 mt-5 text-secondary">
+      <h3 class="text-secondary text-center p-5 mt-4 text-secondary text-uppercase">
         Portfolio
       </h3>
 
@@ -354,11 +361,10 @@
               <strong><span class="gradient">Luvellic</span></strong>
             </h1>
 
-            <p class="lead my-5">
-              Luvellic is a company that sells face and body creams with whitening properties, mostly to
-              women in India and South Africa. My task was to write the mission, vision, and about page
-              for the company, as well as to create copywriting for body and face cream, highlighting the
-              benefits of the products.
+            <p class="lead">
+              Luvellic is a company that sells face and body creams with whitening and anti-aging properties, mostly to
+              women in India and South Africa. My task was to write Mission, Vision, and About Page for the company, as
+              well as to create copywriting for body and face cream, highlighting the benefits of the products.
             </p>
             <a href="#" class="btn btn-portfolio btn-primary btn-lg rounded-0 text-white text-uppercase p-3"
               role="button" data-toggle="modal" data-target="#luvellic">View my copy
@@ -377,7 +383,7 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body popup-text lead p-5 mx-5">
+                  <div class="modal-body popup-text lead p-2 mx-4 ">
 
                     <p class="h5">For the packaging:</p>
 
@@ -436,12 +442,11 @@
               <strong><span class="gradient">Salt & Sun</span></strong>
             </h1>
 
-            <p class="lead my-5">
-              Appreciation of language and literature has followed me since the earliest days. Since my
-              childhood, I've used every single book as an opportunity to read and improve my imagination,
-              which later on resulted in writing my own poems and stories.
-              I have written my first poem at the age of seven, and since then, my writing talent has
-              empowered passion for words and marked my life pat
+            <p class="lead">
+              Salt and Sun is an online store that sells timeless lingerie, swimsuits, and accessories. I have helped
+              them to create outstanding product descriptions that truly describe the situations in which those items
+              are used. I also participated in creating content for their main page - the main goal here was to make the
+              reader stay on the page and start browsing the items.
             </p>
             <a href="#" class="btn btn-portfolio btn-primary btn-lg rounded-0 text-white text-uppercase p-3"
               role="button" data-toggle="modal" data-target="#saltSun">View my copy
@@ -459,7 +464,7 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body popup-text lead p-5 mx-5">
+                  <div class="modal-body popup-text lead p-2 mx-4">
 
                     <p class="h5">Iris Top White Pattern Bikini Top </a>
 
@@ -533,12 +538,11 @@
             <strong><span class="gradient">Lavolio</span></strong>
           </h1>
 
-          <p class="lead my-5">
-            Lavolio is a handmade sweets shop inspired by the most sophisticated Italian chocolate. I got
-            a task to create copywriting blog posts that represented special occasions which can be
-            fulfilled with their sweets. From Mother&#39;s Day and Easter, through weddings and
-            anniversaries, to gifting occasions of different sorts - I&#39;ve highlighted Lavolio sweets through
-            interesting and advising stories.
+          <p class="lead">
+            Lavolio is a handmade sweets shop inspired by the most sophisticated Italian chocolate. I got a task to
+            create copywriting blog posts that represented special occasions in which their sweets can be used. From
+            Mother&#39;s Day and Easter, through weddings and anniversaries, to gifting occasions of different sorts -
+            I&#39;ve highlighted Lavolio sweets through interesting and advising stories.
           </p>
           <a href="#" class="btn btn-portfolio btn-primary btn-lg rounded-0 text-white text-uppercase p-3" role="button"
             data-toggle="modal" data-target="#exampleModalCenter">View my copy
@@ -555,7 +559,7 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body popup-text lead p-5 mx-5">
+                <div class="modal-body popup-text lead p-2 mx-4">
 
                   <p class="h5">Luxurious and sophisticated anniversary gifts for her and for him </p>
 
@@ -629,27 +633,27 @@
 
   <!-- Footer  -->
 
-  <footer class="footer">
-    <div class="container text-center">
+  <footer class="footer mt-5">
+    <div class="container text-center pt-4">
       <a href="#home"><i class="fas fa-arrow-circle-up footer-to-top"></i></a>
 
-      <img class="footer-logo-img m-4" src="img/Logo Finished.svg" alt="Dragana Drobnjak Logo" />
-      <div class="row footer-contact d-flex justify-content-center align-items-center">
-        <span class="contact-me text-light h3">Send me an e-mail: <a
-            href="mailto:draeganas@gmail.com">draeganas@gmail.com</a></span>
+      <img class="footer-logo-img m-4" src="img/LogoLight.svg" alt="Dragana Drobnjak Logo"" />
+      <div class=" row footer-contact d-flex justify-content-center align-items-center">
+      <span class="contact-me text-light h3">Send me an e-mail: <a
+          href="mailto:draeganas@gmail.com">draeganas@gmail.com</a></span>
 
-        <div class="container m-4 h5"><span class="platforms text-light">Or contact me through freelancing platforms:
-            <a href="https://www.upwork.com/freelancers/~019a9cf712ef5381e3" target="_blank" class="m-2"><img
-                class="platform-logo" src="img/upwork-tile.svg" alt=""></a>
-            <a href="https://www.freelancer.com/u/draganastoji" target="_blank" class="m-2"><img class="platform-logo"
-                src="img/freelancer-icon.svg" alt=""></a></div>
+      <div class="container m-4 h5"><span class="platforms text-light">Or contact me through freelancing platforms:
+          <a href="https://www.upwork.com/freelancers/~019a9cf712ef5381e3" target="_blank" class="m-2"><img
+              class="platform-logo" src="img/upwork-tile.svg" alt=""></a>
+          <a href="https://www.freelancer.com/u/draganastoji" target="_blank" class="m-2"><img class="platform-logo"
+              src="img/freelancer-icon.svg" alt=""></a></div>
 
 
-        </span>
+      </span>
 
-      </div>
-      <!-- Copyright -->
-      <div class="footer-copyright text-center text-light py-3 mt-5 ">© 2020 Copyright: Dragana Drobnjak</div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center text-light py-3 mt-5 ">© 2020 Copyright: Dragana Drobnjak</div>
     </div>
   </footer>
 

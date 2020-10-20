@@ -1,0 +1,41 @@
+//RESPONSIVE MIXINS
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  @if $breakpoint == md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lg {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xlg {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+/*
+
+@include respond(sm) {
+
+}
+
+@include respond(md) {
+  
+}
+
+@include respond(lg) {
+  
+}
+
+*/

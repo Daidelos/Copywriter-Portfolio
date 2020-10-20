@@ -3,6 +3,10 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
+
+  @include respond(lg) {
+    justify-content: center;
+  }
 }
 
 .lavolio-text,
@@ -13,6 +17,25 @@
   position: relative;
   padding: 5rem 5rem 5rem 14rem;
   width: 70%;
+
+  h1 {
+    @include respond(md) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    margin: 3rem 0;
+    @include respond(md) {
+      font-size: 1.1rem;
+      margin: 1.5rem 0;
+    }
+  }
+
+  @include respond(lg) {
+    padding: 2rem;
+    width: 100%;
+  }
 }
 
 .lavolio-img,
@@ -22,11 +45,21 @@
   top: 50%;
   left: -10rem;
   transform: translateY(-50%);
+
+  @include respond(lg) {
+    display: none;
+  }
 }
 
 .btn-portfolio {
   width: 45%;
   font-size: 1rem;
+
+  @include respond(md) {
+    font-size: 0.9rem;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 .salt-sun-text {
@@ -36,6 +69,25 @@
   position: relative;
   padding: 5rem 14rem 5rem 5rem;
   width: 70%;
+
+  h1 {
+    @include respond(md) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    margin: 3rem 0;
+    @include respond(md) {
+      font-size: 1.1rem;
+      margin: 1.5rem 0;
+    }
+  }
+
+  @include respond(lg) {
+    padding: 2rem;
+    width: 100%;
+  }
 }
 .salt-sun-img {
   max-width: 20rem;
@@ -43,4 +95,8 @@
   top: 50%;
   right: -10rem;
   transform: translateY(-50%);
+
+  @include respond(lg) {
+    display: none;
+  }
 }
