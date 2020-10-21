@@ -663,13 +663,14 @@
       <div class="form-container">
         <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <p>
-            <label class="text-white">Your Name: <input type="text" name="name" class="form-control" /></label>
+            <label class="text-white">Your Name: <input type="text" name="name" class="form-control" required /></label>
           </p>
           <p>
-            <label class="text-white">Your Email: <input type="email" name="email" class="form-control" /></label>
+            <label class="text-white">Your Email: <input type="email" name="email" class="form-control"
+                required /></label>
           </p>
           <p>
-            <label class="text-white">Message: <textarea name="message" class="form-control"
+            <label class="text-white" required>Message: <textarea name="message" class="form-control"
                 rows="4"></textarea></label>
           </p>
           <p>
@@ -720,6 +721,8 @@
     $('.navbar-nav>li>a').on('click', function () {
       $('.navbar-collapse').collapse('hide');
     });
+
+
 
 
 
