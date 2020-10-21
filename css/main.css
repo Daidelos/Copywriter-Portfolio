@@ -7310,7 +7310,15 @@ html {
   height: 10rem; }
 
 .platform-logo {
-  height: 2.5rem; }
+  height: 2.5rem;
+  margin: 0.5rem; }
+  @media (max-width: 576px) {
+    .platform-logo {
+      height: 1.5rem; } }
+
+@media (max-width: 576px) {
+  .platform-text {
+    font-size: 1rem; } }
 
 .footer-to-top {
   position: absolute;

@@ -165,8 +165,17 @@ html {
 
 .platform-logo {
   height: 2.5rem;
-}
+  margin: 0.5rem;
 
+  @include respond(sm) {
+    height: 1.5rem;
+  }
+}
+.platform-text {
+  @include respond(sm) {
+    font-size: 1rem;
+  }
+}
 .footer-to-top {
   position: absolute;
   top: -3%;

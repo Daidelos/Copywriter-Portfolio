@@ -373,7 +373,7 @@
               well as to create copywriting for body and face cream, highlighting the benefits of the products.
             </p>
             <a href="#" class="btn btn-portfolio btn-primary btn-lg rounded-0 text-white text-uppercase p-3"
-              role="button" data-toggle="modal" data-target="#luvellic">View my copy
+              role="button" data-toggle="modal" data-target="#luvellic">Read my copy
             </a>
             <img src="img/drew-graham-cTKGZJTMJQU-unsplash.jpg" alt="" class="luvellic-img img-fluid" />
 
@@ -456,7 +456,7 @@
             reader stay on the page and start browsing the items.
           </p>
           <a href="#" class="btn btn-portfolio btn-primary btn-lg rounded-0 text-white text-uppercase p-3" role="button"
-            data-toggle="modal" data-target="#saltSun">View my copy
+            data-toggle="modal" data-target="#saltSun">Read my copy
           </a>
           <img src="img/jernej-graj-L-ROTbBDgTc-unsplash.jpg" alt="" class="salt-sun-img img-fluid" />
 
@@ -551,7 +551,7 @@
               I&#39;ve highlighted Lavolio sweets through interesting and advising stories.
             </p>
             <a href="#" class="btn btn-portfolio btn-primary btn-lg rounded-0 text-white text-uppercase p-3"
-              role="button" data-toggle="modal" data-target="#exampleModalCenter">View my copy
+              role="button" data-toggle="modal" data-target="#exampleModalCenter">Read my copy
             </a>
 
             <!-- Modal Lavolio-->
@@ -683,11 +683,11 @@
 
         <div class="container m-5 pt-5 h5">
           <span class="platforms text-light">Or contact me through freelancing platforms:
-            <div class="container row justify-content-center align-items-center m-3">
-              <a href="https://www.upwork.com/freelancers/~019a9cf712ef5381e3" target="_blank" class="m-2"><img
-                  class="platform-logo" src="img/upwork-tile.svg" alt=""> Upwork</a>
-              <a href="https://www.freelancer.com/u/draganastoji" target="_blank" class="m-2"><img class="platform-logo"
-                  src="img/freelancer-icon.svg" alt="">Freelancer</a></div>
+            <div class="row justify-content-center align-items-center m-3">
+              <a href="https://www.upwork.com/freelancers/~019a9cf712ef5381e3" target="_blank"
+                class="platform-text m-2"><img class="platform-logo" src="img/upwork-tile.svg" alt=""> Upwork</a>
+              <a href="https://www.freelancer.com/u/draganastoji" target="_blank" class="m-2 platform-text"><img
+                  class="platform-logo" src="img/freelancer-icon.svg" alt="">Freelancer</a></div>
 
         </div>
         </span>
@@ -714,6 +714,12 @@
     //Scrollspy
 
     $('body').scrollspy({ target: '#main-nav' });
+
+    //Nav close on click
+
+    $('.navbar-nav>li>a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
 
 
 
