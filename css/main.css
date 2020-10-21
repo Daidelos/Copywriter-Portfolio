@@ -7358,6 +7358,9 @@ html {
   background-image: linear-gradient(to right, #3dbfd5, #216370);
   -webkit-background-clip: text;
   color: transparent; }
+  @media (max-width: 576px) {
+    .card .fas {
+      font-size: 3.8rem; } }
 
 @media (max-width: 1200px) {
   .card {
@@ -7374,9 +7377,18 @@ html {
     width: 100%;
     margin: 0 auto; } }
 
+@media (max-width: 576px) {
+  .card {
+    min-width: 90%;
+    margin: 0 auto; } }
+
 @media (max-width: 768px) {
   .card-text {
     font-size: 1.1rem; } }
+
+@media (max-width: 576px) {
+  .card-text {
+    padding: 2rem; } }
 
 .section-experience {
   display: grid;
@@ -7399,27 +7411,39 @@ html {
 .work {
   font-weight: 300; }
 
-@media (max-width: 992px) {
-  .services-title {
-    font-size: 1.5rem; } }
+.services-title {
+  padding: 1rem 0; }
+  @media (max-width: 992px) {
+    .services-title {
+      font-size: 1.5rem;
+      padding: 1.5rem 0;
+      margin-top: 2rem; } }
 
 .what-i-do {
   grid-row: 1 / 4;
   grid-column: 1 / 6;
   background-color: #eeeeee;
   color: #494f5a;
-  margin-left: 15px;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.9;
   margin-right: 10rem;
-  padding: 0 4rem 3rem 0; }
+  padding: 3rem 1.5rem; }
+  .what-i-do ul {
+    margin: 0 3rem; }
+    @media (max-width: 992px) {
+      .what-i-do ul {
+        margin: 0 1rem 2rem 1rem; } }
   @media (max-width: 992px) {
     .what-i-do {
       margin-left: 0;
       margin-right: 0;
-      padding: 0;
-      font-size: 1rem; } }
+      padding: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.7; } }
+  @media (max-width: 768px) {
+    .what-i-do {
+      padding: 0.5rem; } }
 
 .experience {
   grid-row: 3 / 5;
@@ -7435,23 +7459,29 @@ html {
 
 .what-i-do-2 {
   background-color: #e8ffff;
-  margin-left: 15px;
-  font-size: 1.3rem;
-  font-weight: 400;
-  padding-right: 10%;
   color: #494f5a;
-  line-height: 1.9;
   grid-row: 4 / 7;
   grid-column: 3 / 7;
-  margin-top: 4rem;
-  padding-top: 4rem;
-  margin-right: 15px; }
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.9;
+  margin-right: 10rem;
+  margin-top: 3rem;
+  padding: 3rem 1.5rem; }
+  .what-i-do-2 ul {
+    margin: 3rem 3rem 0 3rem; }
+    @media (max-width: 992px) {
+      .what-i-do-2 ul {
+        margin: 2rem 1rem 2rem 1rem; } }
   @media (max-width: 992px) {
     .what-i-do-2 {
       margin: 0;
-      padding: 0;
-      font-size: 1rem;
-      width: 100%; } }
+      padding: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.7; } }
+  @media (max-width: 768px) {
+    .what-i-do-2 {
+      padding: 0.5rem; } }
 
 .about-me-box {
   width: 75%;
@@ -7497,6 +7527,13 @@ html {
   .about-me-add {
     display: none; } }
 
+.portfolio-headline {
+  padding: 3rem; }
+  @media (max-width: 768px) {
+    .portfolio-headline {
+      font-size: 1.5rem;
+      padding: 2rem; } }
+
 .lavolio,
 .luvellic {
   display: flex;
@@ -7509,7 +7546,6 @@ html {
 
 .lavolio-text,
 .luvellic-text {
-  width: 50rem;
   height: auto;
   background-color: #e8ffff;
   position: relative;
@@ -7518,10 +7554,15 @@ html {
   @media (max-width: 768px) {
     .lavolio-text h1,
     .luvellic-text h1 {
-      font-size: 2rem; } }
+      font-size: 1.7rem; } }
   .lavolio-text p,
   .luvellic-text p {
     margin: 3rem 0; }
+    @media (max-width: 992px) {
+      .lavolio-text p,
+      .luvellic-text p {
+        color: #222831;
+        font-weight: 300; } }
     @media (max-width: 768px) {
       .lavolio-text p,
       .luvellic-text p {
@@ -7530,8 +7571,18 @@ html {
   @media (max-width: 992px) {
     .lavolio-text,
     .luvellic-text {
-      padding: 2rem;
+      padding: 3rem;
       width: 100%; } }
+
+@media (max-width: 992px) {
+  .luvellic-text {
+    background-image: linear-gradient(to bottom, rgba(240, 254, 255, 0.9), rgba(240, 251, 255, 0.9)), url(/img/drew-graham-cTKGZJTMJQU-unsplash.jpg);
+    background-size: cover; } }
+
+@media (max-width: 992px) {
+  .lavolio-text {
+    background-image: linear-gradient(to bottom, rgba(240, 254, 255, 0.9), rgba(240, 251, 255, 0.9)), url(/img/jasmine-waheed-iyBOx5YvFbs-unsplash.jpg);
+    background-size: cover; } }
 
 .lavolio-img,
 .luvellic-img {
@@ -7548,6 +7599,9 @@ html {
 .btn-portfolio {
   width: 45%;
   font-size: 1rem; }
+  @media (max-width: 992px) {
+    .btn-portfolio {
+      font-weight: 700; } }
   @media (max-width: 768px) {
     .btn-portfolio {
       font-size: 0.9rem;
@@ -7563,7 +7617,7 @@ html {
   width: 70%; }
   @media (max-width: 768px) {
     .salt-sun-text h1 {
-      font-size: 2rem; } }
+      font-size: 1.7rem; } }
   .salt-sun-text p {
     margin: 3rem 0; }
     @media (max-width: 768px) {
@@ -7572,8 +7626,10 @@ html {
         margin: 1.5rem 0; } }
   @media (max-width: 992px) {
     .salt-sun-text {
-      padding: 2rem;
-      width: 100%; } }
+      padding: 3rem;
+      width: 100%;
+      background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url(/img/jernej-graj-L-ROTbBDgTc-unsplash.jpg);
+      background-size: cover; } }
 
 .salt-sun-img {
   max-width: 20rem;
@@ -7599,7 +7655,7 @@ html {
       width: 35rem; } }
   @media (max-width: 576px) {
     #carouselExampleControls {
-      width: 25rem; } }
+      width: 100%; } }
 
 .testimonials {
   padding: 5rem 0; }
@@ -7628,7 +7684,7 @@ html {
   @media (max-width: 992px) {
     .carousel-inner {
       width: auto;
-      height: 100%; } }
+      max-height: 100%; } }
   .carousel-inner__testimonial {
     display: flex;
     justify-content: center;
@@ -7641,7 +7697,8 @@ html {
 .quote {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 3rem; }
   .quote p {
     font-size: 1.4rem; }
     @media (max-width: 992px) {
@@ -7649,10 +7706,27 @@ html {
         font-weight: 300;
         font-size: 1.1rem;
         padding: 0 1rem 1rem 1rem; } }
+    @media (max-width: 768px) {
+      .quote p {
+        padding: 0; } }
 
 .quote-2 {
-  padding-left: 6rem;
-  padding-right: 6rem; }
+  padding: 1.2rem; }
+  @media (max-width: 992px) {
+    .quote-2 {
+      padding: 0.7rem; } }
+  @media (max-width: 768px) {
+    .quote-2 {
+      padding: 0.4rem; } }
+  .quote-2 p {
+    padding-left: 6rem;
+    padding-right: 6rem; }
+    @media (max-width: 768px) {
+      .quote-2 p {
+        padding: 1.5rem 4rem; } }
+    @media (max-width: 576px) {
+      .quote-2 p {
+        padding: 0.5rem 4rem; } }
 
 .upwork img {
   width: 6rem; }
@@ -7684,6 +7758,16 @@ html {
 
 .upwork-reviews {
   transform: scale(1.5); }
+
+@media (max-width: 768px) {
+  .carousel-sm-hide {
+    display: none; } }
+
+.carousel-sm-show {
+  display: none; }
+  @media (max-width: 768px) {
+    .carousel-sm-show {
+      display: inline; } }
 
 .worked-with {
   background-color: #298ea0;

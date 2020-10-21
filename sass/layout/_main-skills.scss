@@ -21,6 +21,10 @@
     background-image: linear-gradient(to right, #3dbfd5, #216370);
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond(sm) {
+      font-size: 3.8rem;
+    }
   }
 
   @include respond(xlg) {
@@ -37,11 +41,19 @@
     width: 100%;
     margin: 0 auto;
   }
+  @include respond(sm) {
+    min-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .card-text {
   @include respond(md) {
     font-size: 1.1rem;
+  }
+
+  @include respond(sm) {
+    padding: 2rem;
   }
 }
 
@@ -72,8 +84,11 @@
 }
 
 .services-title {
+  padding: 1rem 0;
   @include respond(lg) {
     font-size: 1.5rem;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
   }
 }
 .what-i-do {
@@ -81,19 +96,30 @@
   grid-column: 1 / 6;
   background-color: #eeeeee;
   color: #494f5a;
-  margin-left: 15px;
   font-size: 1.2rem;
   font-weight: 400;
-
   line-height: 1.9;
   margin-right: 10rem;
-  padding: 0 4rem 3rem 0;
+  padding: 3rem 1.5rem;
+
+  ul {
+    margin: 0 3rem;
+
+    @include respond(lg) {
+      margin: 0 1rem 2rem 1rem;
+    }
+  }
 
   @include respond(lg) {
     margin-left: 0;
     margin-right: 0;
-    padding: 0;
-    font-size: 1rem;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  @include respond(md) {
+    padding: 0.5rem;
   }
 }
 
@@ -113,23 +139,33 @@
 
 .what-i-do-2 {
   background-color: #e8ffff;
-  margin-left: 15px;
-  font-size: 1.3rem;
-  font-weight: 400;
-  padding-right: 10%;
   color: #494f5a;
-  line-height: 1.9;
   grid-row: 4 / 7;
   grid-column: 3 / 7;
-  margin-top: 4rem;
-  padding-top: 4rem;
-  margin-right: 15px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.9;
+  margin-right: 10rem;
+  margin-top: 3rem;
+  padding: 3rem 1.5rem;
+
+  ul {
+    margin: 3rem 3rem 0 3rem;
+
+    @include respond(lg) {
+      margin: 2rem 1rem 2rem 1rem;
+    }
+  }
 
   @include respond(lg) {
     margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  @include respond(md) {
+    padding: 0.5rem;
   }
 }
 

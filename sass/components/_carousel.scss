@@ -12,7 +12,7 @@
     width: 35rem;
   }
   @include respond(sm) {
-    width: 25rem;
+    width: 100%;
   }
 }
 .testimonials {
@@ -56,7 +56,7 @@
 
   @include respond(lg) {
     width: auto;
-    height: 100%;
+    max-height: 100%;
   }
 
   &__testimonial {
@@ -77,20 +77,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 
   p {
     font-size: 1.4rem;
+
     @include respond(lg) {
       font-weight: 300;
       font-size: 1.1rem;
       padding: 0 1rem 1rem 1rem;
     }
+
+    @include respond(md) {
+      padding: 0;
+    }
   }
 }
 
 .quote-2 {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding: 1.2rem;
+
+  @include respond(lg) {
+    padding: 0.7rem;
+  }
+
+  @include respond(md) {
+    padding: 0.4rem;
+  }
+
+  p {
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+    @include respond(md) {
+      padding: 1.5rem 4rem;
+    }
+
+    @include respond(sm) {
+      padding: 0.5rem 4rem;
+    }
+  }
 }
 
 .upwork {
@@ -132,4 +158,17 @@
 
 .upwork-reviews {
   transform: scale(1.5);
+}
+
+.carousel-sm-hide {
+  @include respond(md) {
+    display: none;
+  }
+}
+
+.carousel-sm-show {
+  display: none;
+  @include respond(md) {
+    display: inline;
+  }
 }
