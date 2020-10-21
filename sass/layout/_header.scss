@@ -169,7 +169,7 @@ html {
 
 .footer-to-top {
   position: absolute;
-  top: -7%;
+  top: -3%;
   left: 50%;
   font-size: 4rem;
   transform: translateX(-50%);
@@ -184,5 +184,21 @@ html {
     background-color: white;
     border: 3px solid white;
     border-radius: 50%;
+  }
+}
+
+.form-control {
+  width: 30vw;
+  border-radius: 0;
+
+  @include respond(xlg) {
+    width: 60vw;
+  }
+
+  @include respond(lg) {
+    width: 55vw;
+  }
+  @include respond(sm) {
+    width: 80vw;
   }
 }

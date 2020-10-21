@@ -7314,7 +7314,7 @@ html {
 
 .footer-to-top {
   position: absolute;
-  top: -7%;
+  top: -3%;
   left: 50%;
   font-size: 4rem;
   transform: translateX(-50%);
@@ -7326,6 +7326,19 @@ html {
     background-color: white;
     border: 3px solid white;
     border-radius: 50%; }
+
+.form-control {
+  width: 30vw;
+  border-radius: 0; }
+  @media (max-width: 1200px) {
+    .form-control {
+      width: 60vw; } }
+  @media (max-width: 992px) {
+    .form-control {
+      width: 55vw; } }
+  @media (max-width: 576px) {
+    .form-control {
+      width: 80vw; } }
 
 @media (max-width: 768px) {
   .card-title-main {
