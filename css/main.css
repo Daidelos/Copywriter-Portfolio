@@ -7340,6 +7340,9 @@ html {
     .form-control {
       width: 80vw; } }
 
+.g-recaptcha {
+  display: inline-block; }
+
 @media (max-width: 768px) {
   .card-title-main {
     font-size: 1.3rem;
