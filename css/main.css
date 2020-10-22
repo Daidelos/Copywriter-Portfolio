@@ -7171,10 +7171,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 */
-.naslov {
-  transition: all 1s; }
-  .naslov:hover {
-    color: gray; }
+html {
+  scroll-behavior: smooth; }
 
 .nav-link {
   text-transform: uppercase;
@@ -7185,9 +7183,6 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-background-clip: text;
   color: transparent; }
 
-html {
-  scroll-behavior: smooth; }
-
 .nav-container {
   height: min-content;
   width: 100%;
@@ -7197,14 +7192,6 @@ html {
 .nav-item {
   padding-left: 20px; }
 
-.header {
-  position: relative; }
-  .header__logo-box {
-    width: max-content; }
-  .header__logo img {
-    width: 5rem;
-    height: 5rem; }
-
 .navbar-nav {
   margin-left: auto; }
 
@@ -7212,6 +7199,14 @@ html {
   background-color: white;
   width: 100%;
   height: 5rem; }
+
+.header {
+  position: relative; }
+  .header__logo-box {
+    width: max-content; }
+  .header__logo img {
+    width: 5rem;
+    height: 5rem; }
 
 .main-header {
   width: 100%;
@@ -7299,57 +7294,6 @@ html {
     @media (max-width: 1200px) {
       .main-header__stock {
         margin-top: 5rem; } }
-
-.footer {
-  position: relative;
-  width: 100%;
-  background-color: #222831; }
-
-.footer-logo-img {
-  width: 10rem;
-  height: 10rem; }
-
-.platform-logo {
-  height: 2.5rem;
-  margin: 0.5rem; }
-  @media (max-width: 576px) {
-    .platform-logo {
-      height: 1.5rem; } }
-
-@media (max-width: 576px) {
-  .platform-text {
-    font-size: 1rem; } }
-
-.footer-to-top {
-  position: absolute;
-  top: -3%;
-  left: 50%;
-  font-size: 4rem;
-  transform: translateX(-50%);
-  color: #222831;
-  transition: all 0.5s; }
-  .footer-to-top:hover {
-    color: #3dbfd5; }
-  .footer-to-top::before {
-    background-color: white;
-    border: 3px solid white;
-    border-radius: 50%; }
-
-.form-control {
-  width: 30vw;
-  border-radius: 0; }
-  @media (max-width: 1200px) {
-    .form-control {
-      width: 60vw; } }
-  @media (max-width: 992px) {
-    .form-control {
-      width: 55vw; } }
-  @media (max-width: 576px) {
-    .form-control {
-      width: 80vw; } }
-
-.g-recaptcha {
-  display: inline-block; }
 
 @media (max-width: 768px) {
   .card-title-main {
@@ -7480,7 +7424,7 @@ html {
   margin-top: 3rem;
   padding: 3rem 1.5rem; }
   .what-i-do-2 ul {
-    margin: 3rem 3rem 0 3rem; }
+    margin: 4rem 3rem 0 3rem; }
     @media (max-width: 992px) {
       .what-i-do-2 ul {
         margin: 2rem 1rem 2rem 1rem; } }
@@ -7652,6 +7596,57 @@ html {
     .salt-sun-img {
       display: none; } }
 
+.footer-to-top {
+  position: absolute;
+  top: -3%;
+  left: 50%;
+  font-size: 4rem;
+  transform: translateX(-50%);
+  color: #222831;
+  transition: all 0.5s; }
+  .footer-to-top:hover {
+    color: #3dbfd5; }
+  .footer-to-top::before {
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 50%; }
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #222831; }
+
+.footer-logo-img {
+  width: 10rem;
+  height: 10rem; }
+
+.form-control {
+  width: 30vw;
+  border-radius: 0; }
+  @media (max-width: 1200px) {
+    .form-control {
+      width: 60vw; } }
+  @media (max-width: 992px) {
+    .form-control {
+      width: 55vw; } }
+  @media (max-width: 576px) {
+    .form-control {
+      width: 80vw; } }
+
+.platform-logo {
+  height: 2.5rem;
+  margin: 0.5rem; }
+  @media (max-width: 576px) {
+    .platform-logo {
+      height: 1.5rem; } }
+
+@media (max-width: 576px) {
+  .platform-text {
+    font-size: 1rem; } }
+
+.g-recaptcha {
+  display: inline-block; }
+
 #carouselExampleControls {
   position: absolute;
   top: 50%;
@@ -7739,13 +7734,6 @@ html {
       .quote-2 p {
         padding: 0.5rem 4rem; } }
 
-.upwork img {
-  width: 6rem; }
-  @media (max-width: 992px) {
-    .upwork img {
-      width: 4.5rem;
-      padding-bottom: 10px; } }
-
 .date {
   padding-left: 0.5rem;
   color: #747e8f;
@@ -7754,6 +7742,16 @@ html {
     .date {
       font-size: 0.8rem;
       padding-left: 0; } }
+
+.upwork img {
+  width: 6rem; }
+  @media (max-width: 992px) {
+    .upwork img {
+      width: 4.5rem;
+      padding-bottom: 10px; } }
+
+.upwork-reviews {
+  transform: scale(1.5); }
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='222831' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
@@ -7766,9 +7764,6 @@ html {
   @media (max-width: 992px) {
     .carousel-control-next-icon {
       display: none; } }
-
-.upwork-reviews {
-  transform: scale(1.5); }
 
 @media (max-width: 768px) {
   .carousel-sm-hide {

@@ -1,3 +1,9 @@
+/////////////////////////////////////////////////////////
+
+// MAIN SKILLS - WHAT I CAN DO FOR YOU
+
+// CARDS
+
 .card-title-main {
   @include respond(md) {
     font-size: 1.3rem;
@@ -56,6 +62,10 @@
     padding: 2rem;
   }
 }
+
+/////////////////////////////////////////////////////////
+
+// WHAT I CAN DO FOR YOU - LIST
 
 .section-experience {
   display: grid;
@@ -150,7 +160,7 @@
   padding: 3rem 1.5rem;
 
   ul {
-    margin: 3rem 3rem 0 3rem;
+    margin: 4rem 3rem 0 3rem;
 
     @include respond(lg) {
       margin: 2rem 1rem 2rem 1rem;
@@ -169,7 +179,10 @@
   }
 }
 
-// about me
+/////////////////////////////////////////////////////////
+
+// ABOUT ME
+
 .about-me-box {
   width: 75%;
   position: relative;
@@ -200,12 +213,14 @@
     font-size: 1.5rem;
   }
 }
+
 .about-me-text {
   width: 85%;
   @include respond(lg) {
     width: 100%;
   }
 }
+
 .about-me-img {
   width: 17rem;
   position: absolute;
@@ -223,3 +238,5 @@
     display: none;
   }
 }
+
+/////////////////////////////////////////////////////////

@@ -1,0 +1,81 @@
+/////////////////////////////////////////////////////////
+
+//Footer link to top
+
+.footer-to-top {
+  position: absolute;
+  top: -3%;
+  left: 50%;
+  font-size: 4rem;
+  transform: translateX(-50%);
+  color: #222831;
+  transition: all 0.5s;
+
+  &:hover {
+    color: #3dbfd5;
+  }
+
+  &::before {
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+}
+
+/////////////////////////////////////////////////////////
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #222831;
+}
+
+.footer-logo-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+/////////////////////////////////////////////////////////
+
+//Form
+
+.form-control {
+  width: 30vw;
+  border-radius: 0;
+
+  @include respond(xlg) {
+    width: 60vw;
+  }
+
+  @include respond(lg) {
+    width: 55vw;
+  }
+  @include respond(sm) {
+    width: 80vw;
+  }
+}
+
+/////////////////////////////////////////////////////////
+
+//Freelancing platforms links
+
+.platform-logo {
+  height: 2.5rem;
+  margin: 0.5rem;
+
+  @include respond(sm) {
+    height: 1.5rem;
+  }
+}
+
+.platform-text {
+  @include respond(sm) {
+    font-size: 1rem;
+  }
+}
+
+.g-recaptcha {
+  display: inline-block;
+}
+
+/////////////////////////////////////////////////////////

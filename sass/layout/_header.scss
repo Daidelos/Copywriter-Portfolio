@@ -1,7 +1,6 @@
-html {
-  scroll-behavior: smooth;
-}
+/////////////////////////////////////////////////////////
 
+//NAVBAR
 .nav-container {
   height: min-content;
   width: 100%;
@@ -12,6 +11,20 @@ html {
 .nav-item {
   padding-left: 20px;
 }
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-back {
+  background-color: white;
+  width: 100%;
+  height: 5rem;
+}
+
+/////////////////////////////////////////////////////////
+
+//HEADER
 
 .header {
   position: relative;
@@ -28,15 +41,9 @@ html {
   }
 }
 
-.navbar-nav {
-  margin-left: auto;
-}
+/////////////////////////////////////////////////////////
 
-.navbar-back {
-  background-color: white;
-  width: 100%;
-  height: 5rem;
-}
+//HERO SECTION
 
 .main-header {
   width: 100%;
@@ -60,6 +67,8 @@ html {
     }
   }
 
+  // Hero section image
+
   &__portrait {
     width: 30rem;
     grid-column: 1 / 3;
@@ -74,6 +83,8 @@ html {
       padding: 1rem;
     }
   }
+
+  // Text container
 
   &__text-box {
     max-width: 50rem;
@@ -137,6 +148,8 @@ html {
     }
   }
 
+  // Stock image
+
   &__stock {
     grid-column: 3 / 5;
     grid-row: 3 / 5;
@@ -152,66 +165,4 @@ html {
   }
 }
 
-.footer {
-  position: relative;
-  width: 100%;
-  background-color: #222831;
-}
-
-.footer-logo-img {
-  width: 10rem;
-  height: 10rem;
-}
-
-.platform-logo {
-  height: 2.5rem;
-  margin: 0.5rem;
-
-  @include respond(sm) {
-    height: 1.5rem;
-  }
-}
-.platform-text {
-  @include respond(sm) {
-    font-size: 1rem;
-  }
-}
-.footer-to-top {
-  position: absolute;
-  top: -3%;
-  left: 50%;
-  font-size: 4rem;
-  transform: translateX(-50%);
-  color: #222831;
-  transition: all 0.5s;
-
-  &:hover {
-    color: #3dbfd5;
-  }
-
-  &::before {
-    background-color: white;
-    border: 3px solid white;
-    border-radius: 50%;
-  }
-}
-
-.form-control {
-  width: 30vw;
-  border-radius: 0;
-
-  @include respond(xlg) {
-    width: 60vw;
-  }
-
-  @include respond(lg) {
-    width: 55vw;
-  }
-  @include respond(sm) {
-    width: 80vw;
-  }
-}
-
-.g-recaptcha {
-  display: inline-block;
-}
+/////////////////////////////////////////////////////////

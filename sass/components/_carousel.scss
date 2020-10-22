@@ -1,3 +1,7 @@
+/////////////////////////////////////////////////////////
+
+// CAROUSEL
+
 #carouselExampleControls {
   position: absolute;
   top: 50%;
@@ -15,6 +19,7 @@
     width: 100%;
   }
 }
+
 .testimonials {
   padding: 5rem 0;
 
@@ -73,6 +78,10 @@
   }
 }
 
+/////////////////////////////////////////////////////////
+
+// QUOTES
+
 .quote {
   display: flex;
   justify-content: center;
@@ -119,15 +128,9 @@
   }
 }
 
-.upwork {
-  img {
-    width: 6rem;
-    @include respond(lg) {
-      width: 4.5rem;
-      padding-bottom: 10px;
-    }
-  }
-}
+/////////////////////////////////////////////////////////
+
+// DATE
 
 .date {
   padding-left: 0.5rem;
@@ -139,6 +142,26 @@
     padding-left: 0;
   }
 }
+
+/////////////////////////////////////////////////////////
+
+// UPWORK LINK STYLING
+
+.upwork {
+  img {
+    width: 6rem;
+    @include respond(lg) {
+      width: 4.5rem;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.upwork-reviews {
+  transform: scale(1.5);
+}
+
+/////////////////////////////////////////////////////////
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='222831' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
@@ -156,9 +179,9 @@
   }
 }
 
-.upwork-reviews {
-  transform: scale(1.5);
-}
+/////////////////////////////////////////////////////////
+
+// DELITING PART OF A LONG QUOTE / ADDING "
 
 .carousel-sm-hide {
   @include respond(md) {
@@ -172,3 +195,5 @@
     display: inline;
   }
 }
+
+/////////////////////////////////////////////////////////
