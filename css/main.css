@@ -7174,6 +7174,9 @@ a.text-dark:hover, a.text-dark:focus {
 html {
   scroll-behavior: smooth; }
 
+.hidden {
+  display: none; }
+
 .nav-link {
   text-transform: uppercase;
   font-weight: 600; }
@@ -7365,6 +7368,8 @@ html {
 
 .work {
   font-weight: 300; }
+  .work .fa-check-circle {
+    color: #3dbfd5; }
 
 .services-title {
   padding: 1rem 0; }
