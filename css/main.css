@@ -7367,7 +7367,8 @@ html {
     list-style-type: none; }
 
 .work {
-  font-weight: 300; }
+  font-weight: 300;
+  padding: 0.5rem 0; }
   .work .fa-check-circle {
     color: #3dbfd5; }
 
