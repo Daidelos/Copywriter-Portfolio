@@ -10870,13 +10870,9 @@ html {
   width: max-content;
 }
 
-.header__logo {
-  background: #3dbfd5;
-}
-
 .header__logo img {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .main-header {
